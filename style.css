@@ -22,6 +22,10 @@ a{
     align-items: center;
 }
 
+.footer{
+    padding: 16px;
+}
+
 .logo{
     width: auto;
     color: #F9FAF8;
@@ -114,4 +118,32 @@ a{
     height: 200px;
     border-radius: 15px;
     border: 4px solid #3882F6;
+}
+
+/* Investigar si hay alguna mejor manera de alinear el texto como se requiere en la imagen en lugar de utilizar align-self:flex-end 
+y padding-right 256px
+*/
+.quote{
+    display: flex;
+    flex: 1;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding: 128px;
+    padding-right: 256px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.quote-text{
+    align-self: flex-end;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+
+}
+.quote-author{
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: bolder;
 }
